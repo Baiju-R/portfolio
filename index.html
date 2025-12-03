@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aarav Patel | DevOps Portfolio</title>
+    <meta
+      name="description"
+      content="Portfolio for Aarav Patel, DevOps engineer specializing in CI/CD, Kubernetes, and cloud reliability."
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+        <div class="intro" aria-hidden="true">
+          <div class="intro__meteor"></div>
+          <div class="intro__impact"></div>
+          <div class="intro__shockwave"></div>
+          <div class="intro__content">
+            <div class="intro__letters">
+              <span>B</span>
+              <span>A</span>
+              <span>I</span>
+              <span>J</span>
+              <span>U</span>
+            </div>
+          </div>
+        </div>
+
+        <canvas id="starfield" aria-hidden="true"></canvas>
+        <div class="galaxy-gradient" aria-hidden="true"></div>
+        <div class="orbitals" aria-hidden="true">
+          <div class="planet planet--one"></div>
+          <div class="planet planet--two"></div>
+          <div class="planet planet--three"></div>
+          <div class="ring ring--left"></div>
+          <div class="ring ring--right"></div>
+          <div class="nebula-wave nebula-wave--one"></div>
+          <div class="nebula-wave nebula-wave--two"></div>
+        </div>
+
+        <header class="site-header">
+          <a class="logo" href="#hero">Aarav.dev</a>
+          <nav class="site-nav" aria-label="Primary navigation">
+            <a href="#hero">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#experience">Experience</a>
+            <a href="#blog">Blog</a>
+            <a href="#contact">Contact</a>
+          </nav>
+          <button class="menu-toggle" aria-label="Toggle navigation">
+            <span></span><span></span><span></span>
+          </button>
+        </header>
+
+        <main>
+          <section class="hero" id="hero">
+            <div class="hero__constellation">
+              <div class="hero__node" data-label="CI/CD">Δ</div>
+              <div class="hero__node" data-label="SRE">Ω</div>
+              <div class="hero__node" data-label="Cloud">Λ</div>
+              <div class="hero__node" data-label="Automation">Σ</div>
+            </div>
+            <div class="hero__grid">
+              <div class="hero__text">
+                <p class="eyebrow hero__eyebrow">Platform & Reliability Partner</p>
+                <h1>Make launches feel calm and repeatable.</h1>
+                <p class="hero__value">
+                  I design guardrails, CI/CD, and observability stacks so engineering orgs can ship trustworthy code without firefights.
+                </p>
+                <div class="hero__badges">
+                  <span>Kubernetes Ops</span>
+                  <span>GitHub Actions</span>
+                  <span>Terraform</span>
+                  <span>SRE Coaching</span>
+                </div>
+                <div class="hero__actions hero__actions--pill">
+                  <a class="button button--primary" href="#contact">Book a working session</a>
+                  <a class="button button--ghost" href="assets/Aarav-Patel-Resume.pdf" download>Download résumé</a>
+                </div>
+                <ul class="hero__glance">
+                  <li><strong>40+</strong><span>services on shared pipelines</span></li>
+                  <li><strong>15</strong><span>K8s clusters with SLOs</span></li>
+                  <li><strong>&lt;20m</strong><span>mean recovery target</span></li>
+                </ul>
+              </div>
+              <div class="hero__visual">
+                <div class="hero__panel">
+                  <article class="hero-card hero-card--portrait">
+                    <img src="https://images.unsplash.com/photo-1504593811423-6dd665756598?auto=format&fit=crop&w=600&q=60" alt="Portrait of Aarav Patel" id="heroPhoto" />
+                    <p class="hero-card__tag">Always improving delivery teams.</p>
+                    <div class="hero-card__status">
+                      <span class="hero-card__dot"></span>
+                      Accepting platform modernization work
+                    </div>
+                  </article>
+                  <article class="hero-card hero-card--contacts" aria-label="Primary contact channels">
+                    <header>
+                      <p>Reach out</p>
+                      <span>Replies within a day</span>
+                    </header>
+                    <div class="hero__contact-icons" data-featured-skills>
+                      <a class="hero__contact-icon" href="https://linkedin.com/in/aarav-patel" target="_blank" rel="noreferrer">
+                        <span class="hero__contact-icon-circle" aria-hidden="true">
+                          <svg viewBox="0 0 24 24" role="img" aria-hidden="true"><path d="M4.98 3.5C4.98 4.88 3.88 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM.5 8.5H4.5V23H.5V8.5zM8.5 8.5H12.2V10.3H12.3C12.8 9.3 14.1 8.2 16.1 8.2 20.1 8.2 21 10.6 21 14.6V23H17V15.4C17 13.3 16.6 11.8 14.9 11.8 13.2 11.8 12.6 13.1 12.6 15.2V23H8.5V8.5z"/></svg>
+                        </span>
+                        <span class="hero__contact-icon-label">LinkedIn</span>
+                      </a>
+                      <a class="hero__contact-icon" href="https://github.com/aarav-devops" target="_blank" rel="noreferrer">
+                        <span class="hero__contact-icon-circle" aria-hidden="true">
+                          <svg viewBox="0 0 24 24" role="img" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12A12 12 0 0 0 8.21 23.54c.6.11.82-.26.82-.58 0-.29-.01-1.05-.02-2.06-3.34.73-4.04-1.61-4.04-1.61-.55-1.4-1.34-1.77-1.34-1.77-1.09-.74.08-.72.08-.72 1.2.08 1.83 1.24 1.83 1.24 1.07 1.83 2.8 1.3 3.48.99.11-.78.42-1.3.76-1.6-2.67-.3-5.48-1.33-5.48-5.91 0-1.31.47-2.38 1.24-3.22-.12-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.4 11.4 0 0 1 6 0c2.28-1.55 3.29-1.23 3.29-1.23.66 1.66.24 2.88.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.59-2.81 5.61-5.49 5.91.43.37.81 1.09.81 2.2 0 1.58-.02 2.86-.02 3.25 0 .32.21.7.83.58A12 12 0 0 0 24 12C24 5.37 18.63 0 12 0z"/></svg>
+                        </span>
+                        <span class="hero__contact-icon-label">GitHub</span>
+                      </a>
+                      <a class="hero__contact-icon" href="mailto:hello@aarav.dev">
+                        <span class="hero__contact-icon-circle" aria-hidden="true">
+                          <svg viewBox="0 0 24 24" role="img" aria-hidden="true"><path d="M2 4h20a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2zm0 2v.01l10 6.25L22 6V6H2zm0 12h20V8.5l-10 6.25L2 8.5V18z"/></svg>
+                        </span>
+                        <span class="hero__contact-icon-label">Email</span>
+                      </a>
+                      <a class="hero__contact-icon" href="tel:+919988766554">
+                        <span class="hero__contact-icon-circle" aria-hidden="true">
+                          <svg viewBox="0 0 24 24" role="img" aria-hidden="true"><path d="M6.62 10.79a15.09 15.09 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.01-.24 11.36 11.36 0 0 0 3.58.57 1 1 0 0 1 1 1v3.5a1 1 0 0 1-1 1A17.5 17.5 0 0 1 2.5 6a1 1 0 0 1 1-1H7a1 1 0 0 1 1 1c0 1.23.2 2.42.57 3.58a1 1 0 0 1-.24 1.01z"/></svg>
+                        </span>
+                        <span class="hero__contact-icon-label">Phone</span>
+                      </a>
+                    </div>
+                    <p class="hero__contact-hint">Tap an icon to open the channel.</p>
+                  </article>
+                  <article class="hero-card hero-card--brief">
+                    <p class="hero-card__eyebrow">Focus for 2025</p>
+                    <h3>Reliable delivery programs</h3>
+                    <ul>
+                      <li>Blueprinted CI kits with signed artifacts</li>
+                      <li>Observability playbook tied to business signals</li>
+                      <li>Kubernetes upgrades without service churn</li>
+                    </ul>
+                  </article>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="section story" id="about" data-motion="section">
+            <div class="story__grid">
+              <div>
+                <p class="eyebrow">About</p>
+                <h2 data-about-heading>From command line to business outcomes.</h2>
+                <p data-about-summary>
+                  I focus on the engineering fundamentals that matter: maintainable automation, predictable delivery, and visibility the entire company can rely on. From GitHub Actions and Jenkins templates to Terraform platforms and Grafana operations rooms, my work shortens feedback loops without compromising security.
+                </p>
+              </div>
+              <div class="story__panel" data-motion="card">
+                <p>Current priorities</p>
+                <ul data-about-bullets>
+                  <li>Self-documenting CI/CD blueprints teams can reuse safely</li>
+                  <li>Production-ready Kubernetes with guardrails and observability</li>
+                  <li>SLO dashboards that tie runtime health to business metrics</li>
+                </ul>
+              </div>
+            </div>
+            <div class="story__chips">
+              <span>Platform mindset</span>
+              <span>Incident readiness</span>
+              <span>Clear documentation</span>
+            </div>
+          </section>
+
+          <section class="section pulse" id="skills" data-motion="section">
+            <div class="section__header">
+              <p class="eyebrow">Skills</p>
+              <h2>Tools I rely on every day.</h2>
+            </div>
+            <div class="pulse__grid">
+              <article data-motion="card">
+                <h3>CI/CD</h3>
+                <p>GitHub Actions · Jenkins · GitLab CI · CircleCI · Argo Workflows</p>
+              </article>
+              <article data-motion="card">
+                <h3>Containers</h3>
+                <p>Docker · Compose · Kubernetes · Helm · Kustomize · Argo CD</p>
+              </article>
+              <article data-motion="card">
+                <h3>Cloud</h3>
+                <p>AWS (EKS/ECS/Lambda) · Azure (AKS) · GCP (GKE/Cloud Build)</p>
+              </article>
+              <article data-motion="card">
+                <h3>Infra as Code</h3>
+                <p>Terraform · Terragrunt · Ansible · Pulumi experiments</p>
+              </article>
+              <article data-motion="card">
+                <h3>Telemetry</h3>
+                <p>Prometheus · Grafana · Loki · Tempo · ELK · PagerDuty</p>
+              </article>
+              <article data-motion="card">
+                <h3>Automation</h3>
+                <p>Bash · Python · Go snippets · ChatOps (Slack + Actions)</p>
+              </article>
+              <article data-motion="card">
+                <h3>Versioning</h3>
+                <p>Git · trunk-based dev · protected release trains</p>
+              </article>
+            </div>
+            <div class="pulse__timeline" aria-hidden="true">
+              <div class="pulse__dot"></div>
+              <div class="pulse__dot"></div>
+              <div class="pulse__dot"></div>
+            </div>
+          </section>
+
+          <section class="section singularity" id="projects" data-motion="section">
+            <div class="section__header">
+              <p class="eyebrow">Projects</p>
+              <h2>Selected work that improved delivery.</h2>
+            </div>
+            <div class="singularity__stack">
+              <article data-motion="card">
+                <div class="card-gallery">
+                  <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=600&q=60" alt="CI/CD dashboard" loading="lazy" />
+                  <img src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=600&q=60" alt="Pipeline logs" loading="lazy" />
+                  <img src="https://images.unsplash.com/photo-1504639725590-34d0984388bd?auto=format&fit=crop&w=600&q=60" alt="Deployment review" loading="lazy" />
+                </div>
+                <header>
+                  <p class="tag">CI/CD platform</p>
+                  <h3>Reusable GitHub Actions framework</h3>
+                </header>
+                <p>
+                  Built a unified workflow framework powering 40+ services with signed containers, SBOM generation, and automated quality gates baked into every branch.
+                </p>
+                <ul>
+                  <li>Policy enforcement with OPA and Trivy before deployment</li>
+                  <li>Canary orchestration using Argo Rollouts composite actions</li>
+                  <li>Release preparation time reduced from 90 to 22 minutes</li>
+                </ul>
+                <div class="singularity__links">
+                  <a href="https://github.com" target="_blank" rel="noreferrer">Repository</a>
+                  <a href="https://github.com" target="_blank" rel="noreferrer">Process notes</a>
+                </div>
+              </article>
+              <article data-motion="card">
+                <div class="card-gallery">
+                  <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=600&q=60" alt="Kubernetes control room" loading="lazy" />
+                  <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=500&q=60" alt="Service mesh topology" loading="lazy" />
+                  <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=500&q=60" alt="Multi-region monitoring" loading="lazy" />
+                </div>
+                <header>
+                  <p class="tag">Kubernetes platform</p>
+                  <h3>Multi-region SaaS modernization</h3>
+                </header>
+                <p>
+                  Modernized a legacy SaaS footprint into Helm-managed modules, synchronized via GitOps, and deployed across three regions with Istio routing.
+                </p>
+                <ul>
+                  <li>Service mesh operations guide with shared golden signals</li>
+                  <li>Traffic rehearsal workflows enabling zero-downtime rollouts</li>
+                  <li>Infrastructure cost reduced 35% through right-sizing</li>
+                </ul>
+                <div class="singularity__links">
+                  <a href="https://github.com" target="_blank" rel="noreferrer">Config repo</a>
+                  <a href="https://github.com" target="_blank" rel="noreferrer">Operations guide</a>
+                </div>
+              </article>
+              <article data-motion="card">
+                <div class="card-gallery">
+                  <img src="https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?auto=format&fit=crop&w=600&q=60" alt="Terraform workspace" loading="lazy" />
+                  <img src="https://images.unsplash.com/photo-1551033541-2075d8363c65?auto=format&fit=crop&w=600&q=60" alt="AWS environment map" loading="lazy" />
+                </div>
+                <header>
+                  <p class="tag">Infrastructure</p>
+                  <h3>AWS account automation</h3>
+                </header>
+                <p>
+                  Authored Terraform Cloud pipelines to provision VPC, EKS, RDS, and monitoring stacks with drift detection and ChatOps approvals.
+                </p>
+                <ul>
+                  <li>Environment parity scripts reduced setup to 45 minutes</li>
+                  <li>Prometheus and Loki shipped as standard platform add-ons</li>
+                  <li>Run failures surfaced instantly through Slack notifications</li>
+                </ul>
+                <div class="singularity__links">
+                  <a href="https://github.com" target="_blank" rel="noreferrer">Modules</a>
+                  <a href="https://github.com" target="_blank" rel="noreferrer">Architecture</a>
+                </div>
+              </article>
+            </div>
+          </section>
+
+          <section class="section telemetry" id="experience" data-motion="section">
+            <div class="section__header">
+              <p class="eyebrow">Experience</p>
+              <h2>Roles that shaped my approach.</h2>
+            </div>
+            <div class="telemetry__stream">
+              <article data-motion="card">
+                <div class="telemetry__time">2024 → now</div>
+                <div>
+                  <h3>DevOps Engineer · OrbitX Labs</h3>
+                  <ul>
+                    <li>Maintained 15-service release fleet with auto-rollback heuristics.</li>
+                    <li>Moved workloads from ECS to EKS, unlocking autoscaling and 25% savings.</li>
+                    <li>SLO cockpit with Grafana scenes dropped MTTR to < 20 mins.</li>
+                  </ul>
+                </div>
+              </article>
+              <article data-motion="card">
+                <div class="telemetry__time">2023</div>
+                <div>
+                  <h3>DevOps Intern · CloudHub Systems</h3>
+                  <ul>
+                    <li>Shipped Terraform kits for VPC + RDS that all squads now inherit.</li>
+                    <li>Connected Prometheus alerts to PagerDuty escalation maps.</li>
+                  </ul>
+                </div>
+              </article>
+            </div>
+          </section>
+
+          <section class="section spectra" id="certifications" data-motion="section">
+            <div class="section__header">
+              <p class="eyebrow">Certifications</p>
+              <h2>Industry credentials.</h2>
+            </div>
+            <div class="cert-list" data-certifications>
+              <article class="cert-card" data-motion="card">
+                <header>
+                  <span class="cert-card__year">2024</span>
+                  <span class="cert-card__issuer">AWS</span>
+                </header>
+                <h3>AWS Solutions Architect Associate</h3>
+                <p>Validated ability to design resilient, cost-aware workloads on AWS.</p>
+              </article>
+              <article class="cert-card" data-motion="card">
+                <header>
+                  <span class="cert-card__year">2023</span>
+                  <span class="cert-card__issuer">CNCF</span>
+                </header>
+                <h3>Certified Kubernetes Administrator</h3>
+                <p>Hands-on assessment covering cluster lifecycle, networking, and troubleshooting.</p>
+              </article>
+              <article class="cert-card" data-motion="card">
+                <header>
+                  <span class="cert-card__year">2022</span>
+                  <span class="cert-card__issuer">HashiCorp</span>
+                </header>
+                <h3>Terraform Associate</h3>
+                <p>Demonstrated IaC workflows, policy as code, and Terraform Cloud automation.</p>
+              </article>
+            </div>
+          </section>
+
+          <section class="section signals" id="blog" data-motion="section">
+            <div class="section__header">
+              <p class="eyebrow">Blog</p>
+              <h2>Recent writing and talks.</h2>
+            </div>
+            <div class="signals__grid">
+              <article data-motion="card">
+                <div class="card-gallery">
+                  <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=600&q=60" alt="CI/CD blog visuals" loading="lazy" />
+                </div>
+                <h3>Reusable GitHub Actions as internal platforms</h3>
+                <p>Why treating CI/CD templates like productized components improves consistency for every squad.</p>
+                <a href="https://medium.com" target="_blank" rel="noreferrer">Read</a>
+              </article>
+              <article data-motion="card">
+                <div class="card-gallery">
+                  <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=600&q=60" alt="Kubernetes explainer" loading="lazy" />
+                  <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=600&q=60" alt="Service diagram" loading="lazy" />
+                </div>
+                <h3>Explaining Kubernetes without jargon</h3>
+                <p>Plain-language walk-through of pods, services, ingress, and autoscaling for business partners.</p>
+                <a href="https://medium.com" target="_blank" rel="noreferrer">Read</a>
+              </article>
+              <article data-motion="card">
+                <div class="card-gallery">
+                  <img src="https://images.unsplash.com/photo-1551033541-2075d8363c65?auto=format&fit=crop&w=600&q=60" alt="Fintech rollout" loading="lazy" />
+                  <img src="https://images.unsplash.com/photo-1504639725590-34d0984388bd?auto=format&fit=crop&w=600&q=60" alt="Grafana dashboards" loading="lazy" />
+                </div>
+                <h3>End-to-end DevOps for a fintech launch</h3>
+                <p>Lessons from combining Terraform, GitOps, and Grafana scenes into one dependable delivery chain.</p>
+                <a href="https://medium.com" target="_blank" rel="noreferrer">Read</a>
+              </article>
+            </div>
+          </section>
+
+          <section class="section contact" id="contact" data-motion="section">
+            <div class="section__header">
+              <p class="eyebrow">Contact</p>
+              <h2>Let’s build reliable systems.</h2>
+            </div>
+            <div class="contact__content">
+              <div class="contact__info" data-motion="card">
+                <p>Email: <a href="mailto:hello@aarav.dev">hello@aarav.dev</a></p>
+                <p>LinkedIn: <a href="https://linkedin.com" target="_blank" rel="noreferrer">linkedin.com/in/aarav-patel</a></p>
+                <p>GitHub: <a href="https://github.com" target="_blank" rel="noreferrer">github.com/aarav-devops</a></p>
+                <p>Resume: <a href="assets/Aarav-Patel-Resume.pdf">Download PDF</a></p>
+              </div>
+              <form class="contact__form" data-motion="card">
+                <label>
+                  <span>Name</span>
+                  <input type="text" name="name" placeholder="Your name" required />
+                </label>
+                <label>
+                  <span>Email</span>
+                  <input type="email" name="email" placeholder="you@company.com" required />
+                </label>
+                <label>
+                  <span>Message</span>
+                  <textarea name="message" rows="4" placeholder="Tell me about the challenge" required></textarea>
+                </label>
+                <button type="submit" class="button button--primary">Send Message</button>
+              </form>
+            </div>
+          </section>
+        </main>
+
+        <button class="edit-fab" type="button" aria-label="Toggle edit tools">
+          <span>✎</span>
+        </button>
+
+        <div class="edit-modal" role="dialog" aria-modal="true" aria-labelledby="editor-gate" hidden>
+          <div class="edit-modal__card">
+            <h2 id="editor-gate">Unlock Editor</h2>
+            <p>Enter passcode to enable on-page editing.</p>
+            <form class="edit-modal__form">
+              <label>
+                <span>Passcode</span>
+                <input type="password" name="passcode" autocomplete="off" required />
+              </label>
+              <div class="edit-modal__actions">
+                <button type="button" class="button button--ghost" data-editor="cancel">Cancel</button>
+                <button type="submit" class="button button--primary">Unlock</button>
+              </div>
+              <p class="edit-modal__error" role="status" aria-live="polite"></p>
+            </form>
+            <div class="edit-modal__switch">
+              <button type="button" data-editor="forgot">Forgot passcode?</button>
+            </div>
+            <form class="edit-modal__reset" hidden>
+              <label>
+                <span>Current passcode</span>
+                <input type="password" name="currentPasscode" autocomplete="off" required />
+              </label>
+              <label>
+                <span>New passcode</span>
+                <input type="password" name="newPasscode" minlength="4" autocomplete="off" required />
+              </label>
+              <label>
+                <span>Confirm new passcode</span>
+                <input type="password" name="confirmPasscode" minlength="4" autocomplete="off" required />
+              </label>
+              <div class="edit-modal__actions">
+                <button type="button" class="button button--ghost" data-editor="reset-cancel">Back</button>
+                <button type="submit" class="button button--primary">Update</button>
+              </div>
+              <p class="edit-modal__reset-status" role="status" aria-live="polite"></p>
+            </form>
+          </div>
+        </div>
+
+        <aside class="editor-panel" hidden>
+          <header>
+            <div>
+              <p class="eyebrow">Editor console</p>
+              <strong>Inline updates for every section.</strong>
+            </div>
+            <button type="button" class="editor-panel__close" aria-label="Close editor">×</button>
+          </header>
+
+          <section class="editor-panel__section">
+            <label class="editor-toggle">
+              <input type="checkbox" id="inlineEditingToggle" disabled />
+              <span>Enable inline editing</span>
+            </label>
+            <p class="editor-hint">Toggle this on to edit any text directly on the page.</p>
+          </section>
+
+          <section class="editor-panel__section">
+            <h3>Add new project</h3>
+            <form id="projectForm" class="editor-form">
+              <label>
+                <span>Tagline</span>
+                <input type="text" name="tag" placeholder="Project type" required />
+              </label>
+              <label>
+                <span>Title</span>
+                <input type="text" name="title" placeholder="Project title" required />
+              </label>
+              <label>
+                <span>Description</span>
+                <textarea name="description" rows="3" placeholder="Short summary" required></textarea>
+              </label>
+              <label>
+                <span>Highlights (one per line)</span>
+                <textarea name="bullets" rows="3" placeholder="Delivered 40% faster\nDeployed to 3 regions"></textarea>
+              </label>
+              <label>
+                <span>Primary link label</span>
+                <input type="text" name="linkLabel" placeholder="Repository" />
+              </label>
+              <label>
+                <span>Primary link URL</span>
+                <input type="url" name="linkUrl" placeholder="https://" />
+              </label>
+              <label>
+                <span>Upload images</span>
+                <input type="file" name="projectImages" accept="image/*" multiple />
+                <span class="editor-form__hint">Up to 5 images. PNG, JPG, or WebP recommended.</span>
+              </label>
+              <label>
+                <span>Image URLs (optional)</span>
+                <textarea name="projectImageUrls" rows="2" placeholder="https://cdn.example.com/preview-1.png"></textarea>
+                <span class="editor-form__hint">Enter one URL per line if assets are already hosted.</span>
+              </label>
+              <button type="submit" class="button button--primary">Add Project</button>
+            </form>
+          </section>
+
+          <section class="editor-panel__section">
+            <h3>Add new skill</h3>
+            <form id="skillForm" class="editor-form">
+              <label>
+                <span>Skill title</span>
+                <input type="text" name="skillTitle" placeholder="Observability" required />
+              </label>
+              <label>
+                <span>Details</span>
+                <textarea name="skillDetails" rows="2" placeholder="Prometheus · Grafana · OpenTelemetry" required></textarea>
+              </label>
+              <button type="submit" class="button button--primary">Add Skill</button>
+            </form>
+          </section>
+
+          <section class="editor-panel__section">
+            <h3>Update about section</h3>
+            <form id="aboutForm" class="editor-form">
+              <label>
+                <span>Headline</span>
+                <input type="text" name="aboutHeading" placeholder="From command line to business outcomes" required />
+              </label>
+              <label>
+                <span>Summary</span>
+                <textarea name="aboutSummary" rows="3" placeholder="Short overview" required></textarea>
+              </label>
+              <label>
+                <span>Focus areas (one per line)</span>
+                <textarea name="aboutBullets" rows="3" placeholder="Self-documenting pipelines
+SLO dashboards tied to business metrics"></textarea>
+              </label>
+              <label>
+                <span>Upload profile photo</span>
+                <input type="file" name="aboutPhoto" accept="image/*" />
+                <span class="editor-form__hint">Square images work best. Max 5 MB.</span>
+              </label>
+              <label>
+                <span>Photo URL (optional)</span>
+                <input type="url" name="aboutPhotoUrl" placeholder="https://cdn.example.com/photo.jpg" />
+              </label>
+              <button type="submit" class="button button--primary">Save About</button>
+            </form>
+          </section>
+
+          <section class="editor-panel__section">
+            <h3>Add certification</h3>
+            <form id="certForm" class="editor-form">
+              <label>
+                <span>Certification name</span>
+                <input type="text" name="certTitle" placeholder="AWS SAA" required />
+              </label>
+              <label>
+                <span>Issuer / provider</span>
+                <input type="text" name="certIssuer" placeholder="AWS" />
+              </label>
+              <label>
+                <span>Year</span>
+                <input type="text" name="certYear" placeholder="2024" required />
+              </label>
+              <label>
+                <span>Description</span>
+                <textarea name="certDescription" rows="2" placeholder="What this certification validates"></textarea>
+              </label>
+              <button type="submit" class="button button--primary">Add Certification</button>
+            </form>
+          </section>
+
+          <section class="editor-panel__section">
+            <h3>Add contact link</h3>
+            <form id="contactForm" class="editor-form">
+              <label>
+                <span>Label</span>
+                <input type="text" name="contactLabel" placeholder="LinkedIn" required />
+              </label>
+              <label>
+                <span>Value (URL, email, or phone)</span>
+                <input type="text" name="contactValue" placeholder="https://linkedin.com/in/aarav-patel" required />
+              </label>
+              <button type="submit" class="button button--primary">Add Contact</button>
+            </form>
+          </section>
+
+          <section class="editor-panel__section">
+            <h3>Add blog post</h3>
+            <form id="blogForm" class="editor-form">
+              <label>
+                <span>Headline</span>
+                <input type="text" name="blogTitle" placeholder="Blog title" required />
+              </label>
+              <label>
+                <span>Summary</span>
+                <textarea name="blogSummary" rows="2" placeholder="Quick blurb" required></textarea>
+              </label>
+              <label>
+                <span>Link</span>
+                <input type="url" name="blogLink" placeholder="https://" required />
+              </label>
+              <label>
+                <span>Upload images</span>
+                <input type="file" name="blogImages" accept="image/*" multiple />
+                <span class="editor-form__hint">Attach hero or inline visuals for the post.</span>
+              </label>
+              <label>
+                <span>Image URLs (optional)</span>
+                <textarea name="blogImageUrls" rows="2" placeholder="https://assets.cdn/blog-cover.jpg"></textarea>
+              </label>
+              <button type="submit" class="button button--primary">Add Blog</button>
+            </form>
+          </section>
+
+          <section class="editor-panel__section editor-panel__section--danger">
+            <h3>Danger zone</h3>
+            <p>Delete saved content from the selected areas below. This cannot be undone.</p>
+            <form id="purgeForm" class="editor-form editor-form--checks">
+              <label><input type="checkbox" name="sections" value="hero" checked />Hero content</label>
+              <label><input type="checkbox" name="sections" value="about" checked />About section</label>
+              <label><input type="checkbox" name="sections" value="projects" checked />Projects</label>
+              <label><input type="checkbox" name="sections" value="skills" checked />Skills</label>
+              <label><input type="checkbox" name="sections" value="blogs" checked />Blog posts</label>
+              <label><input type="checkbox" name="sections" value="certifications" checked />Certifications</label>
+              <label><input type="checkbox" name="sections" value="contacts" checked />Contact links</label>
+              <button type="submit" class="button button--danger">Delete selected data</button>
+              <p class="editor-form__hint">Use this to clear newly added edits or reset sections quickly.</p>
+            </form>
+          </section>
+        </aside>
+
+        <footer class="site-footer">
+          <p>© 2025 Aarav Patel · DevOps Portfolio</p>
+        </footer>
+
+        <script src="script.js" type="module"></script>
+      </body>
+    </html>
